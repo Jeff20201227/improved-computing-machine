@@ -11,13 +11,14 @@ $colorDisainer: #f16d7f
 
 body 
     font-family: 'Lato', sans-serif
-    width: 1600px
-    margin: 0 auto
 
 .wrapper 
     min-height: 100vh
     display: flex
+    flex-wrap: wrap
+    justify-content: center
     flex-direction: column
+    padding: 0 calc(50% - 800px)
 
 .top 
     flex-grow: 1
@@ -64,7 +65,6 @@ form.header__form
 
 
 span.Log1 
-    font-family: 'Lato'
     font-size: 27px
     font-weight: 300
     color: #222222
@@ -75,7 +75,6 @@ span.Log1
 
 
 span.Log2 
-    font-family: 'Lato'
     font-size: 27px
     font-weight: 900
     color: $colorDisainer
@@ -121,6 +120,7 @@ input[type="text"]
     list-style-type: none
     display: flex
     justify-content: center
+    align-items: center
 
 
 .menu__link 
@@ -134,19 +134,16 @@ input[type="text"]
 
 .promo 
     background-color: #e8e8e8
-
-
-.promo__content 
     height: 613px
     background-image: url(img/promo.png)
-    background-position: 0 -51px
+    background-position: center -51px
+    background-repeat: no-repeat
 
 .promo_text
     width: 485px
     padding-top: 224px
 
 .promo_content_0
-    font-family: 'Lato'
     font-size: 60px
     font-weight: 900
     color: #222222
@@ -154,7 +151,6 @@ input[type="text"]
     letter-spacing: 0.03em
 
 .promo_content_1
-    font-family: 'Lato'
     font-size: 40px
     font-weight: 900
     color: #222222
@@ -162,7 +158,6 @@ input[type="text"]
     letter-spacing: 0.03em
 
 .promo_content_2
-    font-family: 'Lato'
     font-size: 40px
     font-weight: 900
     color: $colorDisainer
@@ -224,7 +219,6 @@ span.promo_1
     display: grid
     align-items: center
     padding-left: 16px
-    font-family: 'Lato'
     font-size: 18px
     font-weight: 900
     color: #222222
@@ -232,7 +226,6 @@ span.promo_1
     text-transform: uppercase
 
 span.promo_2
-    font-family: 'Lato'
     font-size: 30px
     font-weight: 900
     color: #f16d7f
@@ -240,7 +233,6 @@ span.promo_2
     text-transform: uppercase
 
 p.center_1 
-    font-family: 'Lato'
     font-size: 30px
     font-weight: bold
     color: #222222
@@ -250,7 +242,6 @@ p.center_1
     margin-top: 100px
 
 p.center_2
-    font-family: 'Lato'
     font-size: 14px
     color: #9f9f9f
     text-align: center
@@ -271,7 +262,6 @@ p.center_2
     justify-content: flex-start
     margin-top: 19px
     margin-left: 14px
-    font-family: 'Lato'
     font-size: 13px
     color: #222222
     text-align: center
@@ -282,7 +272,6 @@ p.center_2
     justify-content: flex-start
     margin-left: 14px
     margin-bottom: 10px
-    font-family: 'Lato'
     font-size: 16px
     font-weight: bold
     color: #f16d7f
@@ -323,21 +312,18 @@ p.center_2
     padding-left: 39px
 
 .Procent
-    font-family: 'Lato'
     font-size: 54px
     font-weight: bold
     color: #ffffff
     letter-spacing: 0.03em
 
 .Offer
-    font-family: 'Lato'
     font-size: 54px
     font-weight: bold
     color: #f16d7f
     letter-spacing: 0.03em
 
 .women
-    font-family: 'Lato'
     font-size: 32px
     font-weight: bold
     color: #ffffff
@@ -378,7 +364,6 @@ p.center_2
     height: 20px
 
 h2.text 
-    font-family: 'Lato'
     font-size: 20px
     font-weight: bold
     color: #fbfbfb
@@ -393,7 +378,6 @@ h2.text
 p.text 
     height: 93px
     width: 236px
-    font-family: 'Lato'
     font-size: 14px
     font-weight: 300
     color: #fbfbfb
@@ -404,7 +388,6 @@ p.text
 
 .subsscrib
     height: 438px
-    width: 1600px
     background-image: url(img/fons.png)
     background-repeat: round
     background-color: #ccc
@@ -426,7 +409,6 @@ p.subtext
     margin-top: -69px
     height: 197px
     width: 426px
-    font-family: 'Lato'
     font-size: 16px
     font-style: italic
     color: #222224
@@ -438,7 +420,6 @@ p.subtext
     flex-direction: column
     margin-left: 343px
     margin-top: -117px
-    font-family: 'Lato'
     font-size: 16px
     font-weight: bold
     color: #f16d7f
@@ -447,7 +428,6 @@ p.subtext
 
 .subtext_2
     margin-left: 343px
-    font-family: 'Lato'
     font-size: 12px
     font-weight: 500
     color: #222224
@@ -455,14 +435,14 @@ p.subtext
     line-height: 14px
 
 h2.sub_h 
-    display: grid
-    position: absolute
-    left: 946px
-    top: 3654px
-    right: 377px
+    display: flex
+    flex-direction: column
+    width: 277px
+    margin-left: 946px
+    margin-top: -95px
+    margin-bottom: 35px
 
 .subtext_3
-    font-family: 'Lato'
     font-size: 24px
     color: #222224
     text-align: center
@@ -471,7 +451,6 @@ h2.sub_h
     text-transform: uppercase
 
 .subtext_4
-    font-family: 'Lato'
     font-size: 14px
     color: #222224
     text-align: center
@@ -487,8 +466,8 @@ input[type="email"]
 
 .button_Subs
     position: absolute
-    top: 3794px
-    left: 1272px
+    left: 1186px
+    top: 3810px
     height: 46px
     width: 104px
     background-color: #f16d7f
@@ -497,7 +476,6 @@ input[type="email"]
 .by
     font-size: 14px
     color: #ffffff
-    text-align: center
     letter-spacing: 0.03em
     line-height: 45px
     display: flex
@@ -515,7 +493,6 @@ p.pred_footer_1
     margin-top: 29px
     height: 204px
     width: 430px
-    font-family: 'Lato'
     font-size: 14px
     font-weight: 300
     color: #898989
@@ -527,7 +504,6 @@ p.pred_footer_2
     margin-top: -83px
     height: 204px
     width: 430px
-    font-family: 'Lato'
     font-size: 14px
     font-weight: 300
     color: #898989
@@ -537,7 +513,6 @@ p.pred_footer_2
 .pred_foot
     position: absolute
     top: 4080px
-    font-family: 'Lato'
     font-size: 18px
     font-weight: bold
     color: #f16d7f
@@ -590,7 +565,6 @@ ul.pred_footer_5
     margin-left: 1170px
 
 a.links_footer 
-    font-family: 'Lato'
     font-size: 16px
     color: #898989
     text-align: right
@@ -600,12 +574,11 @@ a.links_footer
 ul 
     list-style: none
     
-li
+.footer_li
     padding-bottom: 25px
 
 .footer 
     background-color: $backColorFooter
-    font-family: 'Lato'
     font-size: 16px
     color: #7a7a7a
     letter-spacing: 0.03em
@@ -613,5 +586,7 @@ li
     display: flex
     align-items: center
     height: 79px
-    padding-left: 228px
     margin-top: 65px
+
+span.footer_text 
+    margin-left: 228px
