@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -53,8 +54,8 @@ a {
   height: 100px;
   background-color: #fff;
   border: 1px solid #ececec;
-  -webkit-box-shadow: 0px 0px 10px 0px #000000;
-          box-shadow: 0px 0px 10px 0px #000000;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
 }
 
 .header__left,
@@ -78,7 +79,14 @@ a {
 }
 
 .header__cart {
+  width: 32px;
+  height: 29px;
   margin-right: 26px;
+  background-image: url(img/cart_black.png);
+}
+
+.header__cart:hover {
+  background-image: url(img/cart_pink.png);
 }
 
 .header_search {
@@ -124,6 +132,7 @@ span.Log2 {
 }
 
 input[type="text"] {
+  padding-left: 15px;
   height: 38px;
   width: 317px;
   background-color: #fff;
@@ -168,6 +177,11 @@ input[type="text"] {
   color: white;
 }
 
+.button_Account:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
 .menu {
   list-style-type: none;
   display: -webkit-box;
@@ -183,7 +197,7 @@ input[type="text"] {
 
 .menu__link {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
   color: #222222;
   text-transform: uppercase;
   padding: 20px;
@@ -392,10 +406,10 @@ p.center_2 {
           align-items: center;
   height: 39px;
   width: 123px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   font-size: 13px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
 }
 
 .product__add:hover {
@@ -414,8 +428,13 @@ p.center_2 {
 .product__name {
   font-size: 13px;
   color: #222222;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+
+.product__name:hover {
+  text-decoration: underline;
 }
 
 .product__price {
@@ -424,6 +443,10 @@ p.center_2 {
   color: #f16d7f;
   text-transform: uppercase;
   margin-top: 16px;
+}
+
+.product_cart {
+  margin-right: 8px;
 }
 
 .button_1 {
@@ -443,6 +466,11 @@ p.center_2 {
   color: white;
   margin-left: 50%;
   margin-bottom: 113px;
+}
+
+.button_1:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
 }
 
 .snow {
@@ -465,7 +493,7 @@ p.center_2 {
 .Procent {
   font-size: 54px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.03em;
 }
 
@@ -479,7 +507,7 @@ p.center_2 {
 .women {
   font-size: 32px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.03em;
   -webkit-transform: scale(0.89);
   transform: scale(0.89);
@@ -671,7 +699,7 @@ input[type="email"] {
 
 .by {
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.03em;
   line-height: 45px;
   display: -webkit-box;
@@ -680,6 +708,12 @@ input[type="email"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: inherit;
+}
+
+.by:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
 }
 
 .pred_footer {
@@ -881,5 +915,15 @@ i.fa.fa-linkedin:hover,
 i.fa.fa-pinterest:hover,
 i.fa.fa-google-plus:hover {
   background-color: #f16d7f;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*
+ * Стили для страницы Product
+ */
+.promo_productPage {
+  background-color: #f8f3f4;
+  height: 148px;
 }
 /*# sourceMappingURL=style.css.map */

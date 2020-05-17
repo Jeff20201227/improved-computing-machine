@@ -1,6 +1,6 @@
 $backColorHeader: #fff
 $colorBorder: #ececec
-$colorLink: #222222
+$colorLinkandText: #222222
 $backColorFooter: #ccc
 $colorDisainer: #f16d7f
 
@@ -22,7 +22,7 @@ body
 
 .top 
     flex-grow: 1
-
+    
 a 
     text-decoration: none
 
@@ -36,7 +36,7 @@ a
     height: 100px
     background-color: $backColorHeader
     border: 1px solid $colorBorder
-    box-shadow: 0px 0px 10px 0px #000000
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
 
 .header__left,
 .header__right 
@@ -49,7 +49,13 @@ a
     margin-left: 37px
 
 .header__cart 
+    width: 32px
+    height: 29px
     margin-right: 26px
+    background-image: url(img/cart_black.png)
+
+.header__cart:hover
+    background-image: url(img/cart_pink.png)
 
 .header_search
     display: flex
@@ -67,7 +73,7 @@ form.header__form
 span.Log1 
     font-size: 27px
     font-weight: 300
-    color: #222222
+    color: $colorLinkandText
     text-align: center
     letter-spacing: 0.03em
     line-height: 32px
@@ -84,6 +90,7 @@ span.Log2
     text-transform: uppercase
 
 input[type="text"]
+    padding-left: 15px
     height: 38px
     width: 317px
     background-color: $backColorHeader
@@ -91,9 +98,9 @@ input[type="text"]
     border-radius: 0px 3px 3px 0px
 
 .Brows
-    border: 1px solid #ececec
+    border: 1px solid $colorBorder
     padding: 9px
-    background-color: #ececec
+    background-color: $colorBorder
     margin-left: 37px
 
 .Ssearch
@@ -116,6 +123,9 @@ input[type="text"]
     align-items: center
     color: white
 
+.button_Account:hover
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+
 .menu 
     list-style-type: none
     display: flex
@@ -125,8 +135,8 @@ input[type="text"]
 
 .menu__link 
     font-size: 14px
-    font-weight: bold
-    color: $colorLink
+    font-weight: 800
+    color: $colorLinkandText
     text-transform: uppercase
     padding: 20px
     display: block
@@ -149,14 +159,14 @@ input[type="text"]
 .promo_content_0
     font-size: 60px
     font-weight: 900
-    color: #222222
+    color: $colorLinkandText
     text-align: right
     letter-spacing: 0.03em
 
 .promo_content_1
     font-size: 40px
     font-weight: 900
-    color: #222222
+    color: $colorLinkandText
     text-align: right
     letter-spacing: 0.03em
 
@@ -226,21 +236,21 @@ span.promo_1
     padding-left: 16px
     font-size: 18px
     font-weight: 900
-    color: #222222
+    color: $colorLinkandText
     letter-spacing: 0.03em
     text-transform: uppercase
 
 span.promo_2
     font-size: 30px
     font-weight: 900
-    color: #f16d7f
+    color: $colorDisainer
     letter-spacing: 0.03em
     text-transform: uppercase
 
 p.center_1 
     font-size: 30px
     font-weight: bold
-    color: #222222
+    color: $colorLinkandText
     text-align: center
     letter-spacing: 0.03em
     line-height: 54px
@@ -288,10 +298,10 @@ p.center_2
     align-items: center
     height: 39px
     width: 123px
-    border: 1px solid #ffffff
+    border: 1px solid $backColorHeader
     font-size: 13px
     font-weight: bold
-    color: #ffffff
+    color: $backColorHeader
 
 
 .product__add:hover 
@@ -308,18 +318,24 @@ p.center_2
 
 .product__name 
     font-size: 13px
-    color: #222222
+    color: $colorLinkandText
+    font-weight: 700
     text-align: center
     text-transform: uppercase
+
+.product__name:hover
+    text-decoration: underline
 
 
 .product__price 
     font-size: 16px
     font-weight: bold
-    color: #f16d7f
+    color: $colorDisainer
     text-transform: uppercase
     margin-top: 16px
 
+.product_cart 
+    margin-right: 8px
 
 .button_1
     border: 1px solid $colorDisainer
@@ -332,6 +348,9 @@ p.center_2
     color: white
     margin-left: 50%
     margin-bottom: 113px
+
+.button_1:hover 
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
 
 .snow
     height: 529px
@@ -351,19 +370,19 @@ p.center_2
 .Procent
     font-size: 54px
     font-weight: bold
-    color: #ffffff
+    color: $backColorHeader
     letter-spacing: 0.03em
 
 .Offer
     font-size: 54px
     font-weight: bold
-    color: #f16d7f
+    color: $colorDisainer
     letter-spacing: 0.03em
 
 .women
     font-size: 32px
     font-weight: bold
-    color: #ffffff
+    color: $backColorHeader
     letter-spacing: 0.03em
     -webkit-transform: scale(0.89)
     -ms-transform: scale(0.89)
@@ -427,7 +446,7 @@ p.text
     height: 438px
     background-image: url(img/fons.png)
     background-repeat: round
-    background-color: #ccc
+    background-color: $backColorFooter
     margin-top: 97px
     margin-bottom: 109px
 
@@ -459,7 +478,7 @@ p.subtext
     margin-top: -117px
     font-size: 16px
     font-weight: bold
-    color: #f16d7f
+    color: $colorDisainer
     letter-spacing: 0.03em
     line-height: 26px
 
@@ -509,16 +528,20 @@ input[type="email"]
     left: 1186px
     height: 46px
     width: 104px
-    background-color: #f16d7f
+    background-color: $colorDisainer
     border-radius: 0px 23px 23px 0px
 
 .by
     font-size: 14px
-    color: #ffffff
+    color: $backColorHeader
     letter-spacing: 0.03em
     line-height: 45px
     display: flex
     justify-content: center
+    border-radius: inherit
+
+.by:hover
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
 
 .pred_footer
     height: 349px
@@ -556,7 +579,7 @@ p.pred_footer_2
     top: 23px
     font-size: 18px
     font-weight: bold
-    color: #f16d7f
+    color: $colorDisainer
     letter-spacing: 0.03em
     line-height: 26px
 
@@ -663,4 +686,13 @@ i.fa.fa-twitter:hover,
 i.fa.fa-linkedin:hover,
 i.fa.fa-pinterest:hover,
 i.fa.fa-google-plus:hover 
-        background-color: $colorDisainer
+    background-color: $colorDisainer
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+
+/* 
+ * Стили для страницы Product
+ */
+
+.promo_productPage      
+    background-color: #f8f3f4
+    height: 148px
