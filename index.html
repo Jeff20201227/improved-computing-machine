@@ -7,7 +7,6 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,11 +14,43 @@
         <div class="top">
             <header class="header center">
                 <div class="header__left">
-                    <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo"><span class="Log1">BRAN</span><span class="Log2">D</span></a>
+                    <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo"><span
+                            class="Log1">BRAN</span><span class="Log2">D</span></a>
                 </div>
                 <div class="header_search">
                     <form class="header__form" action="#">
-                        <div class="Brows">Browse</div>
+                        <div>
+                            <ul class="menu2">
+                                <li class="menu_list2"><a href="#" class="menu_link"> <a class="Brows" href="#">Browse</a></a>
+                                    <div class="drop2">
+                                        <div class="drop__flex">
+                                            <h3 class="drop__h3">Women</h3>
+                                            <ul class="drop__ul">
+                                                <li><a href="#" class="drop__a">Dresses</a></li>
+                                                <li><a href="#" class="drop__a">Tops</a></li>
+                                                <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                                <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                                <li><a href="#" class="drop__a">Blazers</a></li>
+                                                <li><a href="#" class="drop__a">Denim</a></li>
+                                                <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                                                <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
+                                                <li><a href="#" class="drop__a">Accessories </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="drop__flex">
+                                            <h3 class="drop__h3">Men</h3>
+                                            <ul class="drop__ul">
+                                                <li><a href="#" class="drop__a">Tees/Tank tops</a></li>
+                                                <li><a href="#" class="drop__a">Shirts/Polos</a></li>
+                                                <li><a href="#" class="drop__a">Sweaters</a></li>
+                                                <li><a href="#" class="drop__a">Sweatshirts/Hoodies</a></li>
+                                                <li><a href="#" class="drop__a">Blazers</a></li>
+                                                <li><a href="#" class="drop__a">Jackets/vests</a></li>
+                                        </ul>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
                         <input type="text" size="20" placeholder="Search for Item..." autofocus="">
                         <button type="submit"><img class="Ssearch" src="img/search.png" alt="search"></button>
                     </form>
@@ -33,8 +64,52 @@
             </header>
             <nav class="center">
                 <ul class="menu">
-                    <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link menu__link_active">Home</a></li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link">Man</a>
+                        <div class="drop">
+                            <div class="drop__flex">
+                                <h3 class="drop__h3">Women</h3>
+                                <ul class="drop__ul">
+                                    <li><a href="#" class="drop__a">Dresses</a></li>
+                                    <li><a href="#" class="drop__a">Tops</a></li>
+                                    <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                    <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                    <li><a href="#" class="drop__a">Blazers</a></li>
+                                    <li><a href="#" class="drop__a">Denim</a></li>
+                                    <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                                    <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
+                                    <li><a href="#" class="drop__a">Accessories </a></li>
+                                </ul>
+                            </div>
+                            <div class="drop__flex">
+                                <h3 class="drop__h3">Women</h3>
+                                <ul class="drop__ul">
+                                    <li><a href="#" class="drop__a">Dresses</a></li>
+                                    <li><a href="#" class="drop__a">Tops</a></li>
+                                    <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                    <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                </ul>
+                                <h3 class="drop__h3">Women</h3>
+                                <ul class="drop__ul">
+                                    <li><a href="#" class="drop__a">Dresses</a></li>
+                                    <li><a href="#" class="drop__a">Tops</a></li>
+                                    <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                    <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                </ul>
+                            </div>
+                            <div class="drop__flex">
+                                <h3 class="drop__h3">Women</h3>
+                                <ul class="drop__ul">
+                                    <li><a href="#" class="drop__a">Dresses</a></li>
+                                    <li><a href="#" class="drop__a">Tops</a></li>
+                                    <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                    <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                </ul>
+                                <img src="img/super-sale.png" alt="Акция" class="super-sale">
+                            </div>
+                        </div>
+                    </li>
                     <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
@@ -43,7 +118,8 @@
                 </ul>
             </nav>
             <div class="promo center">
-                <div class="promo_text"><span class="promo_content_0">THE BRAND</span> <span class="promo_content_1">OF LUXERIOUS</span> <span class="promo_content_2">FASHION</span>
+                <div class="promo_text"><span class="promo_content_0">THE BRAND</span> <span class="promo_content_1">OF
+                        LUXERIOUS</span> <span class="promo_content_2">FASHION</span>
                 </div>
             </div>
         </div>
@@ -51,15 +127,19 @@
 
         <div class="centerPage">
             <div class="centerPage_left_1">
-                <a href="#" class="promo_01"><span class="promo_1">hOT dEAL</span><span class="promo_2">FOR MEN</span></a></div>
+                <a href="#" class="promo_01"><span class="promo_1">hOT dEAL</span><span class="promo_2">FOR
+                        MEN</span></a></div>
             <div class="centerPage_left_2">
-                <a href="#" class="promo_02"><span class="promo_1">LUXIROUS & trendy</span><span class="promo_2">ACCESORIES</span></a></div>
+                <a href="#" class="promo_02"><span class="promo_1">LUXIROUS & trendy</span><span
+                        class="promo_2">ACCESORIES</span></a></div>
         </div>
         <div class="centerPage">
             <div class="centerPage_right_1">
-                <a href="#" class="promo_01"><span class="promo_1">30% offer women </span> <span class="promo_2">FOR MEN</span></a></div>
+                <a href="#" class="promo_01"><span class="promo_1">30% offer women </span> <span class="promo_2">FOR
+                        MEN</span></a></div>
             <div class="centerPage_right_2">
-                <a href="#" class="promo_02"><span class="promo_1">new arrivals</span> <span class="promo_2">FOR kids</span></a></div>
+                <a href="#" class="promo_02"><span class="promo_1">new arrivals</span> <span class="promo_2">FOR
+                        kids</span></a></div>
         </div>
 
         <div class="center_text">
@@ -150,7 +230,8 @@
                 <span class="Procent">30%</span><span class="Offer">OFFER <br></span><span class="women">FOR
                     WOMEN</span>
                 <div class="icon_fon_right">
-                    <img class="icon_1" src="img/icon_1.png" alt="Icon_1"><img class="icon_2" src="img/icon_2.png" alt="Icon_2"><img class="icon_3" src="img/icon_3.png" alt="Icon_3">
+                    <img class="icon_1" src="img/icon_1.png" alt="Icon_1"><img class="icon_2" src="img/icon_2.png"
+                        alt="Icon_2"><img class="icon_3" src="img/icon_3.png" alt="Icon_3">
                 </div>
             </div>
             <article class="text_fon_right">
@@ -180,21 +261,25 @@
             <div class="submail">
                 <h2 class="sub_h"><span class="subtext_3">Subscribe</span> <span class="subtext_4">FOR OUR NEWLETTER AND
                         PROMOTION</span></h2>
-                <input type="email" size="20" placeholder="Enter Your Email" name="Subscribe" id="1"><a href="#" class="button_Subs"><span class="by">Subscribe</span></a>
+                <input type="email" size="20" placeholder="Enter Your Email" name="Subscribe" id="1"><a href="#"
+                    class="button_Subs"><span class="by">Subscribe</span></a>
             </div>
         </div>
 
         <div class="pred_footer">
             <div class="pred_text">
-                <a class="logo logo_2" href=""><img class="logo__img" src="img/logo.png" alt="logo"><span class="Log1">BRAN</span><span class="Log2">D</span></a>
+                <a class="logo logo_2" href=""><img class="logo__img" src="img/logo.png" alt="logo"><span
+                        class="Log1">BRAN</span><span class="Log2">D</span></a>
                 <p class="pred_footer_1">
-                    Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate
                     multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
                     processes and cross-unit partnerships.</p>
                 <p class="pred_footer_2"> Efficiently plagiarize 24/365 action items and focused infomediaries.
                     Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
                 </p>
-                <p><span class="pred_foot pred_foot_1">COMPANY</span><span class="pred_foot pred_foot_2">INFORMATION</span><span class="pred_foot pred_foot_3">SHOP
+                <p><span class="pred_foot pred_foot_1">COMPANY</span><span
+                        class="pred_foot pred_foot_2">INFORMATION</span><span class="pred_foot pred_foot_3">SHOP
                         CATEGORY</span>
                 </p>
                 <nav>
@@ -224,15 +309,17 @@
         </div>
 
         <footer class="footer">
-            <span class="footer_text">© 2017 Brand All Rights Reserved.</span>
-            <div class="awesome_icon"><a class="a_icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a class="a_icon" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a class="a_icon" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a class="a_icon" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                <a class="a_icon" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <span class="footer_text">© 2020 Brand All Rights Reserved.</span>
+            <div class="awesome_icon">
+                <a class="a_icon" href="#"><i class="fab fa-facebook-f font-awesome"></i></a>
+                <a class="a_icon" href="#"><i class="fab fa-twitter font-awesome"></i></a>
+                <a class="a_icon" href="#"><i class="fab fa-linkedin-in font-awesome"></i></a>
+                <a class="a_icon" href="#"><i class="fab fa-pinterest font-awesome"></i></a>
+                <a class="a_icon" href="#"><i class="fab fa-google-plus-g font-awesome"></i></a>
             </div>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/c02d82dd2f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

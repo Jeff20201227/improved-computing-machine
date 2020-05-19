@@ -143,7 +143,18 @@ input[type="text"] {
   border: 1px solid #ececec;
   padding: 9px;
   background-color: #ececec;
-  margin-left: 37px;
+  margin-left: 57px;
+}
+
+a.Brows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222222;
+  text-align: right;
+  letter-spacing: 0.03em;
 }
 
 .Ssearch {
@@ -194,6 +205,26 @@ input[type="text"] {
           align-items: center;
 }
 
+.menu-list {
+  position: relative;
+}
+
+.menu__list:hover .drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_list2 {
+  position: relative;
+}
+
+.menu2 .menu__list2:hover .drop2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu__link {
   font-size: 14px;
   font-weight: 800;
@@ -203,8 +234,75 @@ input[type="text"] {
   display: block;
 }
 
+.menu__link_active {
+  border-bottom: 3px solid #f16d7f;
+  padding-bottom: 18px;
+}
+
 .menu__link:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid #f16d7f;
+  padding-bottom: 18px;
+}
+
+.drop {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 12px 20px;
+  position: absolute;
+  display: none;
+  top: 158px;
+}
+
+.drop_last {
+  right: 0;
+}
+
+.drop__flex:not(:last-child) {
+  margin-right: 46px;
+}
+
+.drop__ul {
+  list-style-type: none;
+}
+
+.drop__h3 {
+  width: 234px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  color: #232323;
+  letter-spacing: 0.03em;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.drop__a {
+  font-size: 14px;
+  color: #646464;
+  text-align: right;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+}
+
+.drop__a:hover {
+  color: #f16d7f;
+}
+
+.drop2 {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 12px 15px;
+  position: absolute;
+  left: 50px;
+}
+
+.super-sale {
+  position: absolute;
+  width: 255px;
+  height: 118px;
+  right: 18px;
+  bottom: 18px;
 }
 
 .promo {
@@ -242,8 +340,6 @@ input[type="text"] {
   color: #f16d7f;
   text-align: right;
   letter-spacing: 0.03em;
-  -webkit-transform: scale(1);
-  transform: scale(1);
 }
 
 .centerPage {
@@ -478,7 +574,7 @@ p.center_2 {
   background-color: black;
   margin-left: 229px;
   margin-right: 231px;
-  background-image: url(img/women_snow.webp);
+  background-image: url(img/snow_effect.png), url(img/women_snow.webp);
   background-repeat: no-repeat;
 }
 
@@ -587,8 +683,9 @@ p.text {
 
 .subsscrib {
   height: 438px;
-  background-image: url(img/fons.png);
-  background-repeat: round;
+  background-image: url(img/subs-effect.png), url(img/fons.png);
+  background-size: cover;
+  background-position: bottom;
   background-color: #ccc;
   margin-top: 97px;
   margin-bottom: 109px;
@@ -884,35 +981,22 @@ span.footer_text {
       justify-content: space-around;
 }
 
-i.fa.fa-facebook,
-i.fa.fa-twitter,
-i.fa.fa-linkedin,
-i.fa.fa-pinterest,
-i.fa.fa-google-plus {
+.font-awesome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #b2b2b2;
-  text-align: right;
-  letter-spacing: 0.03em;
-  line-height: 42px;
+  text-align: center;
   width: 32px;
   height: 32px;
+  padding-top: 25%;
   background-color: white;
 }
 
-i.fa.fa-facebook:hover,
-i.fa.fa-twitter:hover,
-i.fa.fa-linkedin:hover,
-i.fa.fa-pinterest:hover,
-i.fa.fa-google-plus:hover {
+.font-awesome:hover {
+  color: white;
+  font-size: 18px;
   background-color: #f16d7f;
   -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
@@ -1141,8 +1225,6 @@ p.Worldwide {
   text-align: center;
   letter-spacing: 0.03em;
   line-height: 24px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
 }
 
 .top_filter {
