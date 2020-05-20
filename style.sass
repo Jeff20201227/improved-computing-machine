@@ -969,7 +969,6 @@ p.Worldwide
 .top_filter
     width: 845px
     height: 115px
-    background-color: #ccc
     margin-top: 71px
     margin-left: 522px
 
@@ -980,8 +979,11 @@ p.Worldwide
 nav.fashion
     padding-top: 25px
 
-a.fashion_link 
+a.fashion_link
     padding: 0px 2px 0px 2px
+
+a.fashion_link:hover
+    color: $colorDisainer
 
 .h_top
     display: flex
@@ -1011,24 +1013,65 @@ span.h_trend.h_price
     color: #dfdfdf
     line-height: 26px
 
-.checkboxes
-    position: relative
-
-.checkbox_line_1
-    position: absolute
-    left: 293px
-    top: -44px
+.checkbox_line_1 
+    display: flex
+    justify-content: space-between
+    width: 211px
+    margin-left: 293px
+    margin-top: -47px
 
 label 
     margin-right: 23px
 
 .checkbox_line_2
-    position: absolute
-    left: 293px
-    top: -15px
+    display: flex
+    justify-content: space-between
+    margin-left: 293px
+    width: 147px
 
 input#XL
     margin-left: 21px
 
-.angle-down_2
+input[type=checkbox] 
+    display: none
+
+input[type=checkbox] + label
+    display: block
+    width: 13px
+    height: 13px
+    margin: 8px
+    background: #fff
+    border: 1px solid #ebebeb    
+    text-align: center    
+
+input[type=checkbox] + label:before
+    font-size: 20px
+
+input[type=checkbox]:checked + label
+    border: 1px solid #f16d7f
+
+input[type=checkbox]:checked + label:before
+    display: flex
+    content: '✔'
+    color: #f16d7f
+    margin-top: -12px
+    
+
+span.checktext
+    display: flex
+    font-size: 14px
+    color: #6f6e6e
+    text-transform: uppercase
+    margin-left: 22px
+    margin-top: -3px
+
+span.checktext:hover
+    color: #f16d7f
+
+
+
+
+
+
+
 
