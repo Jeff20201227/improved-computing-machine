@@ -18,26 +18,32 @@
                             class="Log1">BRAN</span><span class="Log2">D</span></a>
                 </div>
                 <div class="header_search">
-                    <form class="header__form" action="#">
-                        <div class="Brows">Browse</div>
+                    <form class="header_form" action="#">
+                        <div>
+                            <ul class="menu2">
+                                <li class="menu_list2">
+                                 <a class="Brows" href="#">Browse<i class="fas fa-angle-down angle-down"></i></a>
+                        </div>
                         <input type="text" size="20" placeholder="Search for Item..." autofocus="">
-                        <button type="submit"><img class="Ssearch" src="../img/search.png" alt="search"></button>
+                        <button type="submit"><i class="fas fa-search Ssearch"></i></button>
                     </form>
                 </div>
                 <div class="header__right">
                     <a class="header__cart" href="#"></a>
-                    <a href="#" class="button_Account">My Account</a>
+                    <a href="#" class="button_Account">My Account<i class="fas fa-angle-down angle-down"></i></a>
                 </div>
             </header>
             <nav class="center">
                 <ul class="menu">
-                    <li class="menu__list"><a href="#" class="menu__link menu__link_active">Home</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a></li>
+                    <li class="menu_list"><a href="#" class="menu_link">Home</a></li>
+                    <li class="menu_list">
+                        <a href="#" class="menu_link menu_link_active">Man</a>
+                    </li>
+                    <li class="menu_list"><a href="#" class="menu_link">Women</a></li>
+                    <li class="menu_list"><a href="#" class="menu_link">Kids</a></li>
+                    <li class="menu_list"><a href="#" class="menu_link">Accoseriese</a></li>
+                    <li class="menu_list"><a href="#" class="menu_link">Featured</a></li>
+                    <li class="menu_list"><a href="#" class="menu_link">Hot Deals </a></li>
                 </ul>
             </nav>
             <div class="promo_productPage center">
@@ -54,7 +60,7 @@
 
         <aside class="aside">
             <details>
-                <summary class="summary">Category</summary>
+                <summary class="summary"><span class="summary_open"></span>Category</summary>
                 <article class="subcatalog_link">
                     <ul>
                         <li><a href="#" class="catalog_links">Accessories</a></li>
@@ -272,8 +278,8 @@
             <div class="submail">
                 <h2 class="sub_h"><span class="subtext_3">Subscribe</span> <span class="subtext_4">FOR OUR NEWLETTER AND
                         PROMOTION</span></h2>
-                <input type="email" size="20" placeholder="Enter Your Email" name="Subscribe" id="1"><a href="#"
-                    class="button_Subs"><span class="by">Subscribe</span></a>
+                        <input type="email" size="20" placeholder="Enter Your Email" required pattern="\S+@[a-z]+.[a-z]+" name="Subscribe" id="1"><a href="#"
+                        class="button_Subs"><span class="by">Subscribe</span></a>
             </div>
         </div>
 
