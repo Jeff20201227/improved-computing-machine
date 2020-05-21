@@ -1162,6 +1162,10 @@ details summary:after {
   left: 164px;
 }
 
+details[open] summary {
+  color: #f16d7f;
+}
+
 details[open] summary:after {
   content: '\f106';
   position: absolute;
@@ -1171,6 +1175,89 @@ details[open] summary:after {
 
 summary[open]:after {
   color: #f16d7f;
+}
+
+.table {
+  position: relative;
+  height: 50px;
+  width: 846px;
+  margin-left: 522px;
+  background-color: #f3f3f3;
+}
+
+.sort_name {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 153px;
+  background-color: white;
+  top: 10px;
+  left: 10px;
+}
+
+span.sort_text {
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 26px;
+  margin-left: 13px;
+  margin-right: 8px;
+}
+
+.summary_name {
+  font-size: 14px;
+  color: #6f6e6e;
+  line-height: 26px;
+  margin-left: 12px;
+}
+
+details.Name_details summary.summary_name:after {
+  content: '';
+  font-family: "Font Awesome 5 free";
+  position: absolute;
+  left: 132px;
+}
+
+.sum_down {
+  margin-left: 21px;
+}
+
+details.Name_details[open] summary_name:after {
+  content: '\f106';
+  position: absolute;
+  left: 20px;
+  color: #f16d7f;
+}
+
+details.Name_details[open] summary_name {
+  color: #f16d7f;
+}
+
+.sort_number {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 119px;
+  background-color: white;
+  top: 10px;
+  left: 180px;
 }
 
 .catalog_links {
@@ -1354,6 +1441,13 @@ span.h_trend.h_price {
 }
 
 .palka {
+  font-size: 14px;
+  color: #dfdfdf;
+  line-height: 26px;
+  padding-left: 5px;
+}
+
+.palka_2 {
   font-size: 14px;
   color: #dfdfdf;
   line-height: 26px;
