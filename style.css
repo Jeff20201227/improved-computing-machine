@@ -266,7 +266,7 @@ a.Brows {
 }
 
 .drop {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   padding: 12px 20px;
   position: absolute;
@@ -311,7 +311,7 @@ a.Brows {
 
 .drop2 {
   display: none;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   padding: 12px 15px;
   position: absolute;
