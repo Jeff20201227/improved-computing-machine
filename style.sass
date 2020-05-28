@@ -2,6 +2,8 @@
 @import 'mixin'
 @import 'product'
 @import 'shopping_cart'
+@import 'checkout'
+@import 'animations'
 * 
     margin: 0
     padding: 0
@@ -125,9 +127,15 @@ a.Brows
     line-height: 32px
     padding: 10px
     background-color: white
+    transition: all .9s
 
 .Ssearch:hover
+    display: flex
+    justify-content: center
+    align-items: center
     color: $colorDisainer
+    transform: rotate(360deg)
+    border: 1px solid #e6e6e6
 
 .logo_img 
     margin-right: 13px
@@ -737,6 +745,7 @@ a.links_footer
 
 a.links_footer:hover
     color: $colorDisainer
+    animation: text-shadow-drop-center 1.5s ease-out infinite alternate both
 
 ul 
     list-style: none

@@ -95,7 +95,7 @@
   left: 230px;
 }
 
-.summary {
+summary.summary_product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,29 +116,29 @@
   margin-top: 18px;
 }
 
-details summary::-webkit-details-marker {
+details summary.summary_product::-webkit-details-marker {
   display: none;
 }
 
-details summary:after {
+details summary.summary_product:after {
   content: '\f107';
   font-family: "Font Awesome 5 free";
   position: absolute;
   left: 164px;
 }
 
-details[open] summary {
+details[open] summary.summary_product {
   color: #f16d7f;
 }
 
-details[open] summary:after {
+details[open] summary.summary_product:after {
   content: '\f106';
   position: absolute;
   left: 164px;
   color: #f16d7f;
 }
 
-summary[open]:after {
+summary.summary_product[open]:after {
   color: #f16d7f;
 }
 
@@ -184,25 +184,19 @@ span.sort_text {
   margin-left: 12px;
 }
 
-details.Name_details summary.summary_name:after {
-  content: '';
-  font-family: "Font Awesome 5 free";
-  position: absolute;
-  left: 132px;
+details summary.summary_name::-webkit-details-marker {
+  display: none;
 }
 
 .sum_down {
   margin-left: 21px;
 }
 
-details.Name_details[open] .summary_name:after {
-  content: '\f106';
-  position: absolute;
-  left: 20px;
+details.Name_details[open] .summary_name {
   color: #f16d7f;
 }
 
-details.Name_details[open] .summary_name {
+details.Name_details[open] .summary_name:after {
   color: #f16d7f;
 }
 
@@ -581,60 +575,6 @@ span.checktext:hover {
   margin-left: 9px;
 }
 
-@-webkit-keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    -webkit-transform-transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    -webkit-transform-transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    -webkit-transform-transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    -webkit-transform-transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    -webkit-transform-transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-    -webkit-transform-transform: translate(0);
-  }
-}
-
-@keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    -webkit-transform-transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    -webkit-transform-transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    -webkit-transform-transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    -webkit-transform-transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    -webkit-transform-transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-    -webkit-transform-transform: translate(0);
-  }
-}
-
 .chop_cart_product {
   height: 1142px;
 }
@@ -690,6 +630,13 @@ li.cart_li_1 {
 .cart_img {
   height: 115px;
   width: 100px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.cart_img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .position_cart_img {
@@ -1092,6 +1039,227 @@ input[type="text_2"] {
   border-radius: 0px 3px 3px 0px;
 }
 
+summary.summary_checkout_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 26px;
+  margin-left: 230px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+details summary.summary_checkout_details::-webkit-details-marker {
+  display: none;
+}
+
+.position_checkout_1 {
+  margin-top: 89px;
+}
+
+.position_borders_checkout {
+  margin-left: 230px;
+}
+
+.checkout_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 394px;
+  width: 974px;
+  margin-top: 39px;
+}
+
+.checkout_column_1 {
+  height: 394px;
+  width: 487px;
+}
+
+.checkout_column_2 {
+  height: 394px;
+  width: 487px;
+}
+
+.myCheckbox_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 34px;
+  padding-bottom: 20px;
+}
+
+.check_text {
+  font-size: 12px;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.position_p_4 {
+  margin-top: 39px;
+  margin-bottom: 25px;
+  margin-left: 34px;
+}
+
+.position_p_5 {
+  margin-top: 15px;
+  margin-bottom: 34px;
+  margin-left: 34px;
+}
+
+.position_p_6 {
+  margin-left: 34px;
+  margin-bottom: 15px;
+}
+
+.position_p_7 {
+  margin-left: 34px;
+  margin-top: 38px;
+}
+
+.position_p_8 {
+  margin-left: 34px;
+}
+
+.EMail_checkout {
+  height: 45px;
+  width: 390px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-top: 16px;
+  margin-left: 34px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 23px;
+}
+
+.password_checkout {
+  height: 45px;
+  width: 390px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-top: 16px;
+  margin-left: 34px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+span.forgot_pas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 185px;
+  margin-top: -27px;
+  color: black;
+}
+
+span.forgot_pas:hover {
+  color: #f16d7f;
+}
+
+.styles_checkout_1 {
+  font-size: 13px;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.styles_checkout_2 {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+}
+
+.styles_checkout_3 {
+  font-size: 12px;
+  color: #222222;
+  line-height: 20px;
+}
+
+.styles_checkout_4 {
+  font-size: 13px;
+  color: #ff0d0d;
+  line-height: 20px;
+  padding-left: 3px;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    -webkit-transform-transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    -webkit-transform-transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    -webkit-transform-transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    -webkit-transform-transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    -webkit-transform-transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    -webkit-transform-transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    -webkit-transform-transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    -webkit-transform-transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -webkit-transform-transform: translate(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1270,10 +1438,24 @@ a.Brows {
   line-height: 32px;
   padding: 10px;
   background-color: white;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 .Ssearch:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f16d7f;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border: 1px solid #e6e6e6;
 }
 
 .logo_img {
@@ -2080,6 +2262,8 @@ a.links_footer {
 
 a.links_footer:hover {
   color: #f16d7f;
+  -webkit-animation: text-shadow-drop-center 1.5s ease-out infinite alternate both;
+          animation: text-shadow-drop-center 1.5s ease-out infinite alternate both;
 }
 
 ul {

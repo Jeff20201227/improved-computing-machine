@@ -67,7 +67,7 @@
     top: 358px
     left: 230px
 
-.summary 
+summary.summary_product
     display: flex
     position: relative
     align-items: center
@@ -83,25 +83,25 @@
     border-bottom: $borderAtribute $colorBorder_2
     margin-top: 18px
 
-details summary::-webkit-details-marker
+details summary.summary_product::-webkit-details-marker
     display: none
 
-details summary:after 
+details summary.summary_product:after 
     content: '\f107'
     font-family: "Font Awesome 5 free"
     position: absolute
     left: 164px
 
-details[open] summary
+details[open] summary.summary_product
     color: $colorDisainer
 
-details[open] summary:after 
+details[open] summary.summary_product:after 
     content: '\f106'
     position: absolute
     left: 164px
     color: $colorDisainer
 
-summary[open]:after 
+summary.summary_product[open]:after 
     color: $colorDisainer
 
 .table
@@ -135,22 +135,17 @@ span.sort_text
     line-height: 26px
     margin-left: 12px
 
-details.Name_details summary.summary_name:after 
-    content: ''
-    font-family: "Font Awesome 5 free"
-    position: absolute
-    left: 132px
+details summary.summary_name::-webkit-details-marker
+    display: none
+
 
 .sum_down
     margin-left: 21px
 
-details.Name_details[open] .summary_name:after 
-    content: '\f106'
-    position: absolute
-    left: 20px
+details.Name_details[open] .summary_name
     color: $colorDisainer
 
-details.Name_details[open] .summary_name
+details.Name_details[open] .summary_name:after 
     color: $colorDisainer
 
 .sort_number
