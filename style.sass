@@ -4,6 +4,7 @@
 @import 'shopping_cart'
 @import 'checkout'
 @import 'animations'
+@import 'single_page'
 * 
     margin: 0
     padding: 0
@@ -47,14 +48,20 @@ a
         display: flex
         align-items: center
 
-    .header_cart 
+    .header_cart
+        position: relative 
         width: 32px
         height: 29px
+        right: 190px
         margin-right: 26px
         background-image: url(img/cart_black.png)
-    
+
         &:hover
             background-image: url(img/cart_pink.png)
+    
+        &:hover .cart_fon
+            display: flex
+            
 
     .header_search
         display: flex
@@ -64,6 +71,102 @@ a
         .header_form 
         margin-left: -379px
 
+.cart_fon
+    display: none
+    flex-direction: column
+    position: absolute
+    width: 262px
+    background-color: #ffffff
+    border-radius: 5px
+    z-index: 1
+    margin-top: 30px
+
+.cart_product_fon
+    display: flex
+    justify-content: flex-start
+    height: 85px
+    width: 230px
+    padding-left: 15px
+    padding-right: 15px
+    margin-bottom: 10px
+
+.cart_img_fon
+    height: 85px
+    width: 72px
+    margin-top: 10px
+
+.position_text_3
+    display: flex
+    flex-direction: column
+    margin-left: 50px
+
+.cart_text_fon_1
+    font-size: 12px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+
+span.cart_fon_2
+    font-size: 13px
+    color: #e4af48
+    line-height: 20px
+
+.cart_text_fon_3
+    font-size: 12px
+    color: #f16d7f
+    text-transform: uppercase
+
+.cart_product_text_position_h_1
+    margin-left: -35px
+    margin-top: 15px
+
+.cart_product_text_position_h_2
+    margin-left: 65px
+    margin-top: -38px
+    display: flex
+
+h3.cart_product_h3
+    display: flex
+    justify-content: space-around
+    margin-top: 19px
+
+.cart_product_fon_button_1
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 50px
+    width: 225px
+    background-color: #fff
+    border: 1px solid #eaeaea
+
+.cart_product_fon_button_1:hover
+    border: 1px solid #f16d7f
+
+.cart_product_fon_button_1_position_1
+    margin-top: 32px
+    margin-bottom: 11px
+    margin-left: 20px
+
+.cart_product_fon_button_1_position_2
+    margin-left: 20px
+    margin-bottom: 20px
+
+.cart_fon_3
+    font-size: 14px
+    font-weight: bold
+    color: #4a4a4a
+    text-transform: uppercase
+
+.cart_fon_3:hover
+    color: #f16d7f
+
+.borders_cart_2
+    height: 1px
+    width: 229px
+    background-color: #ededed
+    margin-top: 16px
+    margin-bottom: 16px
+    margin-left: 17px
 
 .logo 
     display: flex
