@@ -1414,6 +1414,7 @@ h1.h2_single {
 }
 
 .singleFlex_3 {
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1461,8 +1462,111 @@ p.singleAside_2 {
   font-weight: bold;
   color: #2f2f2f;
   line-height: 24px;
-  padding-left: 90px;
+  padding-left: 95px;
   padding-top: 107px;
+}
+
+.single_name_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  width: 144px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.single_deatails_position_1 {
+  position: absolute;
+  left: 439px;
+  top: 170px;
+}
+
+.single_deatails_position_2 {
+  position: absolute;
+  left: 640px;
+  top: 170px;
+}
+
+.single_deatails_position_3 {
+  position: absolute;
+  left: 834px;
+  top: 170px;
+}
+
+.summary_single {
+  font-size: 14px;
+  padding-left: 17px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+.summary_single_2 {
+  font-size: 14px;
+  padding: 8px 20px 8px 8px;
+}
+
+.div_singles {
+  height: 35px;
+  width: 145px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.position_singles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 17px;
+  margin-left: 727px;
+  margin-top: 30px;
+}
+
+.position_button_3 {
+  margin-top: 50px;
+  margin-left: 335px;
+}
+
+.button_Account_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #f16d7f;
+  height: 55px;
+  width: 537px;
+  background-color: white;
+}
+
+.color_disainer {
+  color: #f16d7f;
+  margin-left: 15px;
+}
+
+details summary.summary_single::-webkit-details-marker {
+  display: none;
+}
+
+details summary.summary_single_2::-webkit-details-marker {
+  display: none;
+}
+
+details.Single_details[open] .summary_single {
+  color: #f16d7f;
+}
+
+details.Single_details[open] .summary_single:after {
+  color: #f16d7f;
+}
+
+.sum_down_2 {
+  margin-left: 80px;
 }
 
 * {
